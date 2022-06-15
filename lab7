@@ -1,0 +1,57 @@
+import math
+import random
+class Calculator:
+    def plus(self, num1, num2):
+        return num1 + num2
+    def minus(self, num1, num2):
+        return num1 - num2
+    def multi(self, num1, num2):
+        return num1 * num2
+    def div(self, num1, num2):
+        if num2 != 0:
+            return num1 / num2
+        else:
+            print("Недопустимая операция - деление на 0")
+    def pow(self, num1, num2):
+        return math.pow(num1, num2)
+    def module(self, num1):
+        def mod(self, num1, num2):
+            return num1 % num2
+        return abs(num1)
+    def rand(self, num1, num2):
+        return random.uniform(num1, num2)
+    def whole_div(self, num1, num2):
+        if num2 != 0:
+            return num1 // num2
+        else:
+            print("Недопустимая операция - деление на 0")
+    def arccos(self, num1):
+        return num1 * math.pi / 180
+    def factorial(self, num1):
+        return math.factorial(num1)
+calc = Calculator()
+do = input("Укажите действие: ")
+while do != "выход":
+    if do == "+":
+        print(calc.plus(num1 = float(input("Укажите первое значение: ")),num2 = float(input("Укажите второе значение: "))))
+    elif do == "-":
+        print(calc.minus(num1=float(input("Укажите первое значение: ")), num2 = float(input("Укажите второе значение: "))))
+    elif do == "*":
+        print(calc.multi(num1=float(input("Укажите первое значение: ")), num2=float(input("Укажите второе значение: "))))
+    elif do == "/":
+        print(calc.div(num1=float(input("Укажите первое значение: ")), num2=float(input("Укажите второе значение: "))))
+    elif do == "^":
+        print(calc.pow(num1=float(input("Укажите первое значение: ")), num2=float(input("Укажите второе значение: "))))
+    elif do == "module":
+        print(calc.module(num1=float(input("Укажите значение: "))))
+    elif do == "0":
+        print(calc.rand(num1=float(input("Укажите верхнее значение: ")), num2=float(input("Укажите нижнее значение: "))))
+    elif do == "//":
+        print(calc.whole_div(num1=float(input("Укажите первое значение: ")), num2=float(input("Укажите второе значение: "))))
+    elif do == "%":
+        print(calc.mod(num1=float(input("Укажите первое значение: ")), num2=float(input("Укажите второе значение: "))))
+    elif do == "acos":
+        print(math.acos(calc.arccos(num1=float(input("Укажите значение: ")))))
+    elif do == "f":
+        print(calc.factorial(num1=int(input("Укажите значениее: "))))
+    do = input("Укажите оператор или наберите выход что бы закончить: ")
