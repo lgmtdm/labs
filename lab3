@@ -1,0 +1,51 @@
+import math
+import random
+do = input("Укажите действие: ")
+while do != "Выход":
+    if do == "+":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        print(num1 + num2)
+    elif do == "-":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        print(num1 - num2)
+    elif do == "/":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        if num2 != 0:
+            print(num1 / num2)
+        else:
+            print("Некорректная операция (деление на 0)")
+    elif do == "*":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        print(num1 * num2)
+    elif do == "pow":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        print(pow(num1, num2))
+    elif do == "module":
+        num1 = float(input("Введите первое число: "))
+        print(abs(num1))
+    elif do == "0":  #операция рандомное число, если нажать на ноль
+        print(random.randint(0, 1000))
+    elif do == "div":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        if num2 != 0:
+            print(num1 // num2)
+        else:
+            print("Некорректная операция (деление на 0)")
+    elif do == "mod":
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        print(num1 % num2)
+    elif do == "f":
+        num1 = int(input("ввести  значение: "))
+        print(math.factorial(num1))
+    elif do == "arccos":
+        num1 = float(input("ввести значение: "))
+        num11 = num1*math.pi/180
+        print(math.acos(number11))
+    do = input("Укажите действие или наберите Выход что бы закончить: ")
