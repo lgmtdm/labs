@@ -1,0 +1,10 @@
+word = input("Введите любое слово: ")
+last_word = word[:-1]
+start = -1
+str_word = " "
+for x in range(0, len(last_word)):
+    if x != 2:
+        str_word = str_word + last_word[x]
+print(str_word)
+if word.find("с") >= 0:
+    print("В вашей строке есть с")
