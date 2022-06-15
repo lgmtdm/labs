@@ -1,0 +1,23 @@
+veg1 = input("Укажите овощ: ")
+veg2 = input("Укажите овощ: ")
+veg3 = input("Укажите овощ: ")
+
+veglow1 = veg1.lower()
+veglow2 = veg2.lower()
+veglow3 = veg3.lower()
+
+vegup1 = veg1.upper()
+vegup2 = veg2.upper()
+vegup3 = veg3.upper()
+
+vegtitle1 = veg1.title()
+vegtitle2 = veg2.title()
+vegtitle3 = veg3.title()
+
+vegetables1 = int(input("Укажите колличество " + veg1 + ": "))
+vegetables2 = int(input("Укажите колличество " + veg2 + ": "))
+vegetables3 = int(input("Укажите колличество " + veg3 + ": "))
+
+print("{} {} ({}, {})".format(vegetables1, veglow1, vegup1, vegtitle1))
+print("{} {} ({}, {})".format(vegetables2, veglow2, vegup2, vegtitle2))
+print("{} {} ({}, {})".format(vegetables3, veglow3, vegup3, vegtitle3))
