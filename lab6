@@ -1,0 +1,55 @@
+import math
+import random
+def plus(num1, num2):
+    return num1 + num2
+def minus(num1, num2):
+    return num1 - num2
+def div(num1, num2):
+    if num2 != 0:
+        return num1 / num2
+    else:
+        print("Недопустимое действие - деление на 0")
+def multi(num1, num2):
+    return num1 * num2
+def pow(num1, num2):
+    return math.pow(num1, num2)
+def module(num1):
+    return abs(num1)
+def rand(num1, num2):
+    return random.uniform(num1, num2)
+def whole_div(num1, num2):
+    if num2 != 0:
+        return num1 // num2
+    else:
+        print("Недопустимое действие - деление на 0")
+def mod(num1,num2):
+    return (num1 % num2)
+def factorial(num1):
+    return math.factorial(num1)
+def arccos(num1):
+    return num1*math.pi/180
+do = input("Укажите действие: ")
+while do != "выход":
+    if do == "+":
+        print(plus(num1 = float(input("Укажите первое число: ")),num2 = float(input("Укажите второе число: "))))
+    elif do == "-":
+        print(minus(num1=float(input("Укажите первое число: ")), num2=float(input("Укажите второе число: "))))
+    elif do == "/":
+        print(div(num1=float(input("Укажите первое число: ")), num2=float(input("Укажите второе число: "))))
+    elif do == "*":
+        print(multi(num1=float(input("Укажите первое число: ")), num2=float(input("Укажите второе число: "))))
+    elif do == "^":
+        print(pow(num1=float(input("Укажите первое число: ")), num2=float(input("Укажите второе число: "))))
+    elif do == "module":
+        print(module(num1=float(input("Укажите число: "))))
+    elif do == "0":
+        print(rand(num1=float(input("Укажите верхнее значение: ")), num2=float(input("Укажите нижнее значение: "))))
+    elif do == "//":
+        print(whole_div(num1=float(input("Укажите первое число: ")), num2=float(input("Укажите второе число: "))))
+    elif do == "%":
+        print(mod(num1=float(input("ввести 1 значение: ")), num2=float(input("ввести 2 значение: "))))
+    elif do == "f":
+        print(factorial(num1=int(input("Укажите число: "))))
+    elif do == "acos":
+        print(math.acos(arccos(num1=float(input("Укажите число: ")))))
+    do = input("Укажите действие: ")
