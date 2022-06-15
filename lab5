@@ -1,0 +1,10 @@
+l1 = input("Введите несколько слов через запятую: ")
+l1 = l1.split(",")
+l_duplicate1 = set(l1) # Слова из первого списка
+count1 = len(l1)
+print("В вашем списке {} слов".format(count1))
+l2 = input("Ведите еще один список из {} слов через запятую: ".format(count1))
+l2 = l2.split(",")
+l_duplicate2 = set(l2) # Слова из второго списка
+vocabulary1 = dict(zip(l1, l2))
+print(vocabulary1)
